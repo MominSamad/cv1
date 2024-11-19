@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional CV - Rao Hasaan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cv-container {
+    display: flex;
+    width: 900px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 30%;
+    background-color: #1d3557;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sidebar h1 {
+    font-size: 1.8em;
+    margin: 15px 0;
+}
+
+.sidebar p {
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+.sidebar h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #a8dadc;
+}
+
+.sidebar .contact p, .sidebar .skills ul li {
+    font-size: 0.9em;
+    margin-bottom: 8px;
+}
+
+.sidebar .skills ul {
+    list-style: none;
+    padding-left: 0;
+}
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    background-color: #a8dadc;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures the image doesn't exceed the container */
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+
+/* Main Content */
+.main-content {
+    width: 70%;
+    padding: 30px;
+    background-color: #f1faee;
+}
+
+.main-content section {
+    margin-bottom: 30px;
+}
+.main-content h1{
+    text-align: center;
+    color: #7cc5c5;
+    font-size: 50px;
+
+}
+.main-content h2 {
+    font-size: 1.5em;
+    color: #1d3557;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #a8dadc;
+    padding-bottom: 5px;
+}
+
+.main-content p {
+    font-size: 1em;
+    color: #457b9d;
+    line-height: 1.6;
+}
+
+.job h3, .education-item h3 {
+    font-size: 1.2em;
+    color: #1d3557;
+}
+
+.job em, .education-item em {
+    font-size: 0.9em;
+    color: #73a0a1;
+}
+
+/* Animations */
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.cv-container {
+    animation: fade-in 2s ease-in-out;
+}
+
+</style>
+<body>
+    <div class="cv-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="profile-photo">
+                <img src="img/blog-author-5.jpg" alt="">
+            </div>
+            <h1>Rao Hasaan</h1>
+            <p>Web Developer | AI Enthusiast</p>
+
+            <div class="contact">
+                <h2>Contact</h2>
+                <p>Email: hasaan@example.com</p>
+                <p>Phone: +123456789</p>
+                <p>Website: hasaan.dev</p>
+                <p>Location: Karachi, Pakistan</p>
+            </div>
+
+            <div class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML / CSS / JavaScript</li>
+                    <li>Next.js</li>
+                    <li>Wordprss Development</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <section>
+                <h1>CV</h1>
+                <h2>Profile</h2>
+                <p>I am a highly motivated web developer with a passion for creating dynamic websites and applications. My skills include front-end development, responsive design, and AI integration. I am currently expanding my knowledge in Next.js and machine learning.</p>
+            </section>
+
+            <section>
+                <h2>Experience</h2>
+                <div class="job">
+                    <!-- <h3>Web Developer - MangoPress</h3> -->
+                    <p><em>2024 - Present</em></p>
+                    <p>Developed and maintained the MangoPress website, enhancing its functionality, usability, and mobile responsiveness. Created the 'Add to Cart' functionality and integrated dynamic animations.</p>
+                </div>
+
+                <div class="job">
+                    <h3>Freelance Web Developer</h3>
+                    <p><em>2023 - 2024</em></p>
+                    <p>Worked on various freelance projects, creating websites for small businesses and personal brands. Specialized in building simple e-commerce sites and portfolio websites.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>NCR College</h3>
+                    <p><em>BSc Computer Science, 2024 - Present</em></p>
+                </div>
+                <div class="education-item">
+                    <h3>St. Paul English High School</h3>
+                    <p><em>High School Diploma, Graduated</em></p>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
